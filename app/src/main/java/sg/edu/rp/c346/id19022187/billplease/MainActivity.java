@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
                     amt = Double.parseDouble(etAmt.getText().toString());
                 }
                 else if (tSvs.isChecked() && !tGst.isChecked()){
-                    amt = Double.parseDouble(etAmt.getText().toString()) * 1.07;
+                    amt = Double.parseDouble(etAmt.getText().toString()) * 1.10;
                 }
                 else if (!tSvs.isChecked() && tGst.isChecked()){
-                    amt = Double.parseDouble(etAmt.getText().toString()) * 1.1;
+                    amt = Double.parseDouble(etAmt.getText().toString()) * 1.07;
                 }
                 else {
                     amt = Double.parseDouble(etAmt.getText().toString()) * 1.17;
